@@ -1,1 +1,26 @@
+{%extends 'layout.html' %}
+{%block content%}
 
+<h1 class="title">Formulario en Django</h1> 
+<form action = "{%url 'save' %}" methodo="GET">
+   
+       
+        <label for ="title">Entregado a:</title>
+            <input type="text" name="title" placeholder="ingrese quien recibio el articulo"/>
+
+
+            <label for ="title">Area</title>
+                <input type="text" name="title" placeholder="Donde encontro el articulo"/>
+
+                <label for ="title">Entrega</title>
+                    <input type="text" name="title" placeholder="mete tu nombre"/>
+
+                    <label for ="Recibe">Tipo de objeto</title>
+                        <input type="text" name="title" placeholder="ejem: Celular, collar, ropa"/>
+
+                    <label for="content"> Descripcion</label> 
+                    <textarea name="content" placeholder="describe el estado del articulo al encontrarlo"></texarea>   
+
+                        <input type="submit" value="Guardar"/>
+</from>
+{%endblock%} 
